@@ -1,0 +1,236 @@
+.mapbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#myMap{
+  display: flex;
+  height: 700px;
+  width: 900px;
+  border: solid black 2px;
+}
+
+.article{
+  margin-bottom: 70px;
+  padding: 50px;
+}
+
+.article h3{
+  font-size: 3rem;
+}
+.article p{
+  font-weight: 200;
+
+}
+.article ul{
+  padding-left: 50px;
+  font-weight: 100;
+  color: #757474;
+}
+
+#ambulance{
+ 
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  padding: 10px;
+}
+
+
+
+.container{
+  max-width: 700px;
+  width: 100%;
+ background: white;
+ padding: 25px 30px;
+ border-radius: 9px;
+ border: 2px solid rgb(116, 216, 158) ;
+ border-width: 2px;
+ 
+
+}
+
+.container .title{
+  padding: 0;
+  margin: 0;
+  padding-bottom: 30px;
+  position: relative;
+  
+}
+
+.container .title::before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(135deg, lightgrey,rgb(116, 216, 158) );
+
+
+}
+
+.container form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+
+form .user-details .input-box{
+  margin: 20px 0 12px 0;
+  width: calc(100% / 2 - 20px);
+
+}
+form .mssg .input-box{
+  width:calc(100% );
+  height: calc(100% * 20);
+  font-family: "Poppins", sans-serif;
+}
+
+
+.user-details .input-box .details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+
+}
+
+.user-details .input-box input,
+.user-details button{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 14px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease
+
+}
+.user-details .input-box textarea{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 14px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease
+
+}
+.user-details .msg textarea{
+  height: 75px;
+ padding-top: 10px;
+ font-family: "Poppins", sans-serif;
+ font-weight: lighter;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid,
+.user-details .input-box textarea:focus,
+.user-details .input-box textarea:valid{
+  border-color: rgb(116, 216, 158);
+
+
+}
+
+form .gender-details .gender-title{
+  font-size: 18px;
+  font-weight: 450;
+  margin-top: 29px;
+  padding-top: 25px;
+
+}
+
+form .gender-details .category{
+  display: flex;
+  width: 80%;
+  
+  justify-content: space-between;
+
+
+}
+
+.category label{
+  display: flex;
+  align-items: center;
+  color: #757474;
+  padding-top: 6px;
+
+}
+
+.category .dot{
+  height:16px;
+  width: 18px;
+  background: lightgrey;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+  border-color: lightgray;
+  border-width: 4px;
+  background: rgb(116, 216, 158);
+
+}
+
+form input[type="radio"]{
+  display:none
+
+}
+
+
+form .button{
+  height: 45px;
+  margin: 45px 0;
+
+}
+
+form .button input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border:none;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, lightgrey,rgb(116, 216, 158) );
+  transition: all 0.4s ease;
+
+}
+
+form .button input:hover{
+  background: linear-gradient(-135deg, lightgrey,rgb(116, 216, 158) );
+}
+
+#map {
+  width: 100%;
+
+}
+
+@media(max-width:584px){
+  .container{
+      max-width: 100%;
+  }
+  form .user-details .input-box{
+      margin-bottom: 15px;
+      width: 100%;
+  }
+  form .gender-details .category{
+      width: 100%;
+  }
+  .container form .user-details{
+      max-height: 300px;
+      overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+      width: 0;
+  }
+}

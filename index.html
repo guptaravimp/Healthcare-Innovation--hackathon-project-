@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="database.css">
+</head>
+
+<body>
+  <div class="portfolio">
+    <div class="_1">HealthCare</div>
+    <div class="_2">Innovation</div>
+  </div>
+  <div class="header">
+    <div >
+      <button id="btn"><a href="" style="text-decoration: none; color: white">Asked Question </a> </button>
+    </div>
+    <div class="navbar">
+      <div class="nav"><a href="/indexfirst.html">Home</a></div>
+      <div class="nav"><a href="/database.html">Services</a></div>
+      <div class="nav"><a href="/about.html">AboutUs</a></div>
+      <div class="nav"><a href="/Conatct.html">Contact Us</a></div>
+      <div class="nav"><a href="/Appointment.html">Appointment</a></div>
+    </div>
+    <button id="btn">
+      <a href="/join.html" style="text-decoration: none; color: white">Register</a>
+    </button>
+  </div>
+  <div class="container1">
+    <h1>Patient Data Base</h1>
+  </div>
+  <div class="selecthospital">
+
+    <label for="hospital">Select Hospital Name:</label>
+    <select name="hospital" id="hospital" onchange="updateInput()">
+      <option value="Ganesh Shankar Vidyarthi Memorial Medical College (GSVM Medical College)">Ganesh Shankar Vidyarthi Memorial Medical College (GSVM Medical College):</option>
+      <option value="Lala Lajpat Rai Hospital">Lala Lajpat Rai Hospital</option>
+      <option value="Rama Medical College">Rama Medical College</option>
+      <option value="Jwala Devi Medical College">Jwala Devi Medical College</option>
+      <option value="Naraina Medical College and Hospital:">Naraina Medical College and Hospital:</option>
+      <option value="Regency Institute of Technology - School of Medical Sciences">Regency Institute of Technology - School of Medical Sciences</option>
+      <option value="Maharana Pratap Dental College">Maharana Pratap Dental College</option>
+      <option value="Rama University, Kanpur Campus">Rama University, Kanpur Campus</option>
+      <option value="" placeholder="Enter hospital name ">Others</option>
+      
+    </select>
+  </div>
+  <div class="formcontainer">
+    <form action="/registration" method="POST"id="form">
+      <div class="inputform">
+        <label for="selectedhospitalname">Hospital Name:</label>
+        <input type="text" id="selectedhospitalname" name="selectedhospitalname">
+      </div>
+      <div class="inputform">
+        <label for="patientid">Patient ID:</label>
+        <input type="text" id="patientid" name="patientid">
+      </div>
+      <div class="inputform">
+        <label for="Name"> Patient Name:</label>
+        <input type="text" id="Name" name="Name">
+      </div>
+      <div class="inputform">
+        <label for="Adress">Patient Adress:</label>
+        <input type="text" id="Adress" name="adress">
+      </div>
+      <div class="inputform">
+        <label for="Phoneno">Phone No:</label>
+        <input type="text" id="Phoneno" name="Phoneno">
+      </div>
+      <div class="inputform">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+      </div>
+      <div class="inputform">
+        <label for="formselect">Blood Group:</label>
+        <select name="" id="formselect" onchange="updateinput2()" >
+         
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+        <input type="text" id="selectedformbloodgroup"name="bloodgroup">
+        
+      </div>
+      <div class="inputform">
+        <label for="formselect">Patient Disease:</label>
+        <select name="" id="formselect2" onchange="updateinput3()" name="patientdisease">
+          <option value="Hypertension (High Blood Pressure)">Hypertension (High Blood Pressure)</option>
+          <option value="Diabetes Mellitus">Diabetes Mellitus</option>
+          <option value="Cancer">Cancer</option>
+          <option value="High fever">High fever</option>
+          <option value="Influenza (Flu)">Influenza (Flu)</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+      <span>If others: </span>
+      
+      <div class="inputform">
+        <label for="textinputarea">Specify</label>
+        <input type="text" id="textinputarea" name="specifydisease">
+        <!-- <textarea class="form-control" id="others" rows="10" ></textarea> -->
+        
+      </div>
+      
+        <button type="submit" id="subbtn" ><input type="submit" value="Submit" id="submit" /></button>
+        <button id="subbtn2"><a href="database2.html" style="text-decoration: none; color: white;" >
+          Print reciept
+       </a></button>
+    </form>
+  </div>
+  <div class="container1">
+    <h1>Patient record</h1>
+  </div>
+  <div class="search">
+    <input type="search" name="" id="myinput" placeholder="Patient ID no...">
+  </div>
+  <div class="ourdata">
+    <table id="tabledata">
+      <thead>
+        <tr>
+          <th>Patient ID</th>
+          <th>Patient Name</th>
+          <th>Blood Group</th>
+          <th>Mobile No</th>
+          <th>Hospital Name</th>
+          <th>Patient Problem </th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <tr>
+          <td>MFT200001</td>
+          <td>Ranjeet Singh</td>
+          <td>A+</td>
+          <td>98567456745</td>
+          <td><button id="btn">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

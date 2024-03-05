@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="analyze.css">
+</head>
+<body>
+
+  <div class="portfolio">
+    <div class="_1">HealthCare</div>
+    <div class="_2">Innovation</div>
+  </div>
+  <div class="header">
+    <div >
+      <button id="btn"><a href="" style="text-decoration: none; color: white">Asked Question </a> </button>
+    </div>
+    <div class="navbar">
+      <div class="nav"><a href="/indexfirst.html">Home</a></div>
+      <div class="nav"><a href="/database.html">Services</a></div>
+      <div class="nav"><a href="/about.html">AboutUs</a></div>
+      <div class="nav"><a href="/Conatct.html">Contact Us</a></div>
+      <div class="nav"><a href="/Appointment.html">Appointment</a></div>
+    </div>
+    <button id="btn">
+      <a href="/join.html" style="text-decoration: none; color: white">Register</a>
+    </button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="analize.js"></script>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<div class="container">
+  <h1>Recent analysis of patient disease datasets</h1>
+  <div>
+    <canvas id="pie-chart"></canvas>
+  </div>
+</div>
+
+
+<script>
+  new Chart(document.getElementById('pie-chart'), {
+    type: 'pie',
+    data: {
+      labels: ["Fever", "Colera", "CoronaVirus", "Dengue", "Accident","Diabetes", "Cancer", "AIDs"],
+      datasets: [{
+        backgroundColor: ["#e63946", "#254BDD",
+          "#233142", "#1d3557", "#326998","#ff6f3c"," #ff9a3c","#ffc93c",
+        ],
+        data: [618, 263, 434, 586, 332,389,123,423]
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Pie Chart for admin panel'
+      },
+      responsive: true
+    }
+  });
+</script>
+</body>
+</html>

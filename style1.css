@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Josefin+Sans:ital,wght@1,300&family=Kalam:wght@700&family=Lobster&family=Open+Sans:ital@1&family=Poppins:ital,wght@0,100;0,200;0,500;1,500;1,600;1,700;1,900&family=Recursive:wght@900;1000&family=Roboto+Mono&family=Roboto+Slab&family=Shrikhand&family=Updock&display=swap');
+*{
+  font-family: 'Roboto Slab', serif;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+.portfolio{
+  background-color: green;
+    width: 100vw;
+    font-size: 38px;
+    /* margin-left: 9px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+  height: 77px;
+  border: 2px solid red;
+}
+._1{
+  color: rgb(30, 30, 78);
+  font-family: 'Lobster', cursive;
+    
+}
+._2{
+  color: rgb(212, 228, 212);
+  font-family: 'Lobster', cursive;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid rgb(189, 41, 41); */
+  margin-top: 20px;
+  height: 42px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 2px solid red; */
+  width: 60vw;
+  height: 42px;
+  margin-left:100px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 10px;
+}
+.nav a{
+  /* font-family: 'Lobster', cursive; */
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+
+  color: rgb(6, 6, 63);
+}
+.nav a:hover{
+  
+
+  color: rgb(53, 137, 17);
+}
+#btn{
+    height: 37px;
+    font-size: 20px;
+    width: 169px;
+    color: white;
+    background-color: rgb(0, 121, 0);
+    margin-right: 25px;
+    border: 1px solid white;
+    border-radius: 9px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.Question{
+  height: 37px;
+  font-size: 20px;
+  width: 169px;
+  color: white;
+    background-color: rgb(0, 121, 0);
+    border-radius: 9px;
+}
+.mainimg{
+  /* background-image: url("image/medical-and-healthcare-doctor-people-group-2C8FCWN.jpg"); */
+  background-image:url("image/WhatsApp Image 2023-11-04 at 15.26.44_4e4d2792.jpg");
+  background-size: cover;
+background-position: center;
+  /* border: 2px solid red; */
+   display: flex;
+   flex-direction: column;
+   justify-content: left;
+   align-items: left;
+   margin-top: 30px;
+   height: 90vh;
+   width: 100vw;
+}
+.mainimg p{
+  color: rgb(26, 16, 69);
+    font-size: 24px;
+    /* border: 2px solid red; */
+    position: absolute;
+    margin: 15px 154px;
+    top: 129px;
+    font-weight: bold;
+ 
+ 
+}
+.mainimgbutton{
+  position: absolute;
+    margin: 20px 335px;
+    top: 285px;
+    height: 56px;
+    width: 151px;
+    font-weight: bold;
+    /* border: 2px solid red; */
+    font-size: 20px;
+    background-color: green;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+  
+ 
+}
+.mainimgbutton img{
+  position: absolute;
+    margin: 28px -12px;
+    top: -104px;
+    height: 79px;
+    width: 152px;
+    border-radius: 103px;
+  
+}
+.button{
+
+  /* border: 3px solid red; */
+  height: 170px;
+  width: 358px;
+  margin: -7px 72px;
+  margin-top: 107px;
+}
+.support2{
+
+  height: 51px;
+    width: 180px;
+    border-radius: 25px;
+    background-color: green;
+    font-size: 20px;
+    color: white;
+    margin: 19px 12px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+.maincontent{
+  height: 300px;
+  width: 40vw;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -7px 5px;
+    margin-top: 5px;
+}
+.content1{
+  width: 15vw;
+  height: 250px;
+  /* border: 2px solid black; */
+  /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+  margin: 10px 10px;
+}
+.content1 img{
+  width: 15vw;
+  height: 250px;
+  border-radius: 68px;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#btn2{
+  height: 50px;
+    width: 224px;
+    margin: 6px 2px;
+    margin-left: 14px;
+    border-radius: 25px;
+    background-color: green;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(50, 46, 43);
+  /* border: 2px solid rgb(189, 41, 41); */
+  margin-top: -12px;
+  height: 42px;
+  /* height: 100vw; */
+}
+.footer1{
+  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 60vw;
+    height: 42px;
+    margin-right: 15px;
+    /* margin-right: 229px; */
+    border-radius: 10px;
+  }
+  .footchild a{
+    /* font-family: 'Lobster', cursive; */
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+  
+    color: rgb(219, 219, 224);
+  }
+
+  .portfolio2{
+    
+    font-family: 'Lobster', cursive;
+      width: 14vw;
+      font-size: 25px;
+      margin-left: 48px;
+      display: flex;
+      font-family: 'Lobster', cursive;
+  
+  }
+  ._11{
+    color: rgb(89, 94, 17);
+    font-family: 'Lobster', cursive;
+      
+  }
+  ._22{
+    color: rgb(247, 247, 247);
+    font-family: 'Lobster', cursive;
+  }
+   .mainconnect{
+    height: 90vh;
+    width: 69vw;
+    margin: 46px 253px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+   
+   
+   .main1connect{
+   
+    height: 80vh;
+    width: 30vw;
+    /* border: 2px solid red; */
+    margin: 2px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    align-items: center;
+    gap: 10px;
+   }
+   .mainconnect2{
+    height: 80vh;
+    width: 30vw;
+    /* border: 2px solid red; */
+    margin: 2px 2px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px;
+   }
+   .box11{
+    height: 208px;
+    width: 200px;
+    /* border: 2px solid red; */
+    margin: -77px -15px;
+    
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
+   
+   }
+  
+  .box11 img{
+   height: 200px;
+   width: 200px;
+   /* border: 2px solid red; */
+   border-radius: 106px;
+  
+  }
+  .box22{
+    height: 314px;
+    width: 25vw;
+    /* border: 2px solid red; */
+    margin: -116px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .box22 h2{
+   color: rgb(11, 11, 44);
+   margin: 3px 3px ;
+
+  }
+  .box22 h3{
+   margin: 3px 3px ;
+   /* color: ; */
+   color: rgb(70, 70, 3);
+  }
+  .box22 p{
+   margin: 3px 3px ;
+   color: blue;
+   font-size: 20px;
+   /* color: ; */
+  }
+  .boxcontent2{
+    margin: -16px -40px;
+    margin-left: 63px;
+    height: 10vh;
+    /* border: 2px solid red; */
+    width: 23vw;
+   
+   
+  
+  }
+  .maindoctorsection{
+    height: 100vh;
+    width: 100vw;
+    /* border: 3px solid red; */
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   #search{
+    
+    height: 37px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 285px;
+    /* border: 3px solid red; */
+    margin: 26px 66px;
+    border-radius: 10px;
+    position: absolute;
+    right: 176px;
+    top: 101px;
+  
+   }
+  
+   #searchbox{
+    height: 37px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 285px;
+    font-size: 20px;
+    /* border: 3px solid red;  */
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+    } 
+   
+   #searchbutton{
+    margin: -4px 6px;
+    height: 43px;
+    width: 139px;
+    position: absolute;
+    top: 43px;
+    right: -150px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: green;
+    cursor: pointer;
+    
+   
+   }
+   .maincontent3{
+    height: 90vh;
+    width: 90vw;
+    /* border: 2px solid red; */
+    margin: 5px 5px ;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+gap: 10px ;
+   }
+   .Doctorcontent{
+    height: 469px;
+    width: 30vw;
+    /* border: 2px solid black; */
+    margin: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    gap: 5px;
+   }
+   .insidedoctor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   }
+   .box1{
+    height: 200px;
+    width: 200px;
+    /* border: 2px solid red; */
+    margin: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   
+   }
+   .box1 img{
+    height: 200px;
+    width: 200px;
+    /* border: 2px solid red; */
+    border-radius: 106px;
+   
+   }
+   .box2{
+    height: 230px;
+    width: 25vw;
+    /* border: 2px solid red; */
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .box2 h2{
+    color: rgb(11, 11, 44);
+    margin: 3px 3px ;
+
+   }
+   .box2 h3{
+    margin: 3px 3px ;
+    /* color: ; */
+    color: rgb(70, 70, 3);
+   }
+   .box2 p{
+    margin: 3px 3px ;
+    color: blue;
+    font-size: 20px;
+    /* color: ; */
+   }
+   .boxcontent{
+    margin: -16px -40px;
+    margin-left: 20px;
+    height: 61vh;
+    /* border: 2px solid red; */
+    width: 25vw;
+   
+   }
+   .box2 button{
+    margin: 51px 10px;
+    height: 50px;
+    width: 224px;
+    border-radius: 25px;
+    background-color: green;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   
+   }
+   .joinmain{
+    
+    height: 90vh;
+    width: 90vw;
+    /* border: 2px solid red; */
+    margin: 10px 10px ;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+gap: 10px ;
+   }
+   .join1{
+    /* border: 2px solid red; */
+    height: 80vh;
+    width: 35vw;
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   
+   }
+   .upperpartself{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin-top: 42px;
+   }
+   .upperpartself h1{
+    /* border: 2px solid red; */
+    margin: 3px 3px ;
+   }
+  .mainconnect2 h1{
+    margin: 5px 5px;
+    font-size: 30px;
+    position: absolute;
+    top: 188px;
+  
+    
+  }
+  .input{
+    height: 34px;
+    width: 298px;
+    border-radius: 10px;
+    margin: -2px 2px;
+    border: 2px solid black;
+    
+  }
+  #requestbutton{
+    margin: 5px 5px;
+    height: 33px;
+    width: 189px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+   
+  }
+  #expertise{
+    border: 2px solid rgb(174, 20, 20);
+  
+  }
+  .join1 h1{
+    padding: 6px 7px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-size: 45px;
+    border-radius: 20px;
+    margin: 17px 1px;
+    margin-top: -101px;
+    background-color: rgb(212, 255, 212);
+  }
+  #join3{
+    display: flex;
+    width: 25vw;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 300px;
+    
+  }
+  .join1 button{
+    height: 49px;
+    width: 201px;
+    border-radius: 25px;
+    background-color: green;
+    font-size: 29px;
+    color: white;
+    margin: 8px 24px;
+    margin-left: -197px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }

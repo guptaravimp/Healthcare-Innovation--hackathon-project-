@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Josefin+Sans:ital,wght@1,300&family=Kalam:wght@700&family=Lobster&family=Open+Sans:ital@1&family=Poppins:ital,wght@0,100;0,200;0,500;1,500;1,600;1,700;1,900&family=Recursive:wght@900;1000&family=Roboto+Mono&family=Roboto+Slab&family=Shrikhand&family=Updock&display=swap');
+*{
+  font-family: 'Roboto Slab', serif;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  
+}
+.portfolio{
+  background-color: green;
+    width: 100vw;
+    font-size: 38px;
+    /* margin-left: 9px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+  height: 77px;
+  /* border: 2px solid red; */
+}
+._1{
+  color: rgb(30, 30, 78);
+  font-family: 'Lobster', cursive;
+    
+}
+._2{
+  color: rgb(212, 228, 212);
+  font-family: 'Lobster', cursive;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid rgb(189, 41, 41); */
+  margin-top: 20px;
+  height: 42px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 2px solid red; */
+  width: 60vw;
+  height: 42px;
+  margin-left:100px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 10px;
+}
+.nav a{
+  /* font-family: 'Lobster', cursive; */
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+
+  color: rgb(6, 6, 63);
+}
+.nav a:hover{
+  
+
+  color: rgb(53, 137, 17);
+}
+#btn{
+    height: 37px;
+    font-size: 20px;
+    width: 169px;
+    color: white;
+    background-color: rgb(0, 121, 0);
+    margin-right: 25px;
+    /* border: 2px solid red; */
+    border-radius: 9px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.Question{
+  height: 37px;
+  font-size: 20px;
+  width: 169px;
+  color: white;
+    background-color: rgb(0, 121, 0);
+    border-radius: 9px;
+}
+.container1{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.selecthospital{
+  font-size: 30px;
+    height: 45px;
+    margin: 40px 53px;
+    width: 87vw;
+    font-weight: bold;
+    /* border: 2px solid black; */
+}
+.selecthospital select{
+  height: 39px;
+    width: 60vw;
+    font-size: 20px;
+    border: 2px solid black ;
+    border-radius: 5px;
+}
+.formcontainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 2px solid red; */
+  height: 136vh;
+  width: 76vw;
+  margin-left: 167px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.inputform{
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  height: 80px;
+  width: 70vw;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 10px 10px ;
+}
+.inputform input{
+  height: 50px;
+  width: 60vw;
+  border: 2px solid black ;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.inputform select{
+  height: 50px;
+  width: 60vw;
+  font-size: 20px;
+    border: 2px solid black ;
+    border-radius: 5px;
+}
+ #textinputarea{
+  height: 200px;
+  width: 60vw;
+}
+#subbtn{
+  height: 45px;
+    background-color: green;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    width: 105px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#subbtn2{
+  height: 45px;
+    background-color: green;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    width: 170px;
+  text-decoration: none;
+}
+.search{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /* border: 2px solid red; */
+}
+.search input{
+  height: 40px;
+  width: 80vw;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.ourdata{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+table {
+  border-collapse: collapse;
+  width: 92vw;
+  margin: 20px auto;
+  /* border: 2px solid red; */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-size: 20px;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+  font-size: 24px;
+}

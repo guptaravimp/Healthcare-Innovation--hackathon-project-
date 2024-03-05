@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+   
+ 
+  <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?key=AgBRPDDf7Xfs8DldRtttBRW3fW4zvC-LDnLlthKzR5pdheS0FV5kWaSckZOOKjXr&callback=GetMap' async defer></script>
+    <title>Healthify</title>
+    <link rel="stylesheet" href="stylecritical.css" />
+    <link rel="stylesheet" href="ambulance.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.webp">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  </head>
+  <body>
+    <div class="portfolio">
+      <div class="_1">HealthCare</div>
+      <div class="_2">Innovation</div>
+    </div>
+    <div class="header">
+      <div>
+        <button id="btn"><a href="" style="text-decoration: none; color: white">Asked Question </a> </button>
+      </div>
+      <div class="navbar">
+        <div class="nav"><a href="/indexfirst.html">Home</a></div>
+        <div class="nav"><a href="/service.html">Services</a></div>
+        <div class="nav"><a href="/about.html">AboutUs</a></div>
+        <div class="nav"><a href="/Conatct.html">Contact Us</a></div>
+        <div class="nav"><a href="/Appointment.html">Appointment</a></div>
+      </div>
+      <button id="btn">
+        <a href="/registration.html" style="text-decoration: none; color: white">Register</a>
+      </button>
+    </div>
+    <nav id="hamburger-nav">
+      <div class="logo">Healthify</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="Home"></a></li>
+          <li><a href="#service" onclick="toggleMenu()">Services</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <hr style="margin:0 50px;">
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="image/profile-pic.jpg" alt="Healthify profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Healthify</h1>
+        <p class="section_text_p2"> your health friend</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Broucher-example.pdf')"
+          >
+            Download Broucher
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        
+    </div>
+    </section>
+    <!-- <br>
+    <br>
+    <br>
+    <br> -->
+    <br>
+
+    <div class="article">
+      <div>
+        <h3>
+        Hospital on wheels
+      </h3>
+      <P>
+        Our medical organization is dedicated to excellence in emergency care through our ambulance service. With a team of highly skilled paramedics and state-of-the-art equipment, we provide swift and efficient medical assistance. From critical interventions to compassionate patient care, we prioritize saving lives. Our commitment to the highest standards ensures that individuals in need receive prompt and professional medical attention, contributing to a healthier and safer community.
+      </P>
+      <br>
+      <P>
+        <ul>
+          <li>
+            Book an ambulance any time any where
+          </li>
+          <li>
+            Track the ambulance location in realtime
+          </li>
+          <li>
+            Get medical advice from doctors via video call in the ambulance
+          </li>
+          <li>
+            Payment through mobile wallets like paytm, google pay and phonepe
+          </li>
+        </ul>
+      </P>
+    </div>
+    </div>
+
+    <div id="map"></div>
+    
+    <section id="ambulance">
+     
+      <div class="container">
+        <div class="title">Registration</div>
+        <form action="#" method="post">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="Enter Your Name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Patient's Name</span>
+              <input type="text" placeholder="Enter Patient's Name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Patient's Age</span>
+              <input type="text" placeholder="Age" required>
+            </div>
+           
+            <div class="input-box">
+              <span class="details">Phone No.</span>
+              <input type="tel" placeholder="Enter phone no." required>
+            </div>
+
+            <div class="input-box">
+              <span class="details">Address</span>
+              <input type="text" placeholder="Address" required  id="address">
+                          
+              
+            </div>
+           
+            <div class="input-box">
+              <p>.</p>
+              <button id="find-me">Get location</button><br />
+              <p id="status"></p>
+              <a id="map-link" target="_blank"></a>
+            </div>
+
+            <div id="myMap" style="position:relative;width:690px;height:350px;"></div>
+            
+
+           
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            <input type="radio" name="gender" id="dot-3">
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+              </label>
+            </div>
+          </div>
+          <div class="user-details mssg">
+            <div class="input-box msg">
+              <span class="details">Message</span>
+              <textarea name="" id="" cols="55" rows="10" placeholder="Describe your emrgency breifly"></textarea>
+            </div>
+          </div>
+          <div class="button">
+            <!-- <src="c2.html"></src> -->
+            <input type="submit" src="c2.html" name="" value="Book"  onclick="book()">
+          </div>
+          
+        </form>
+       
+      </div>
+
+    </section>
+    
+
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Us</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="image/email.jpg"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">support@healthify.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="image/telephone.jpg"
+              alt="telephone icon"
+              class="icon contact-icon"
+            />
+            <p><a href="">+91 54674 54674</a></p>
+          </div>
+        </div>
+      </section>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Healthify. All Rights Reserved.</p>
+      </footer>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="scriptcritical.js"></script>
+  <script src="location.js"></script>
+  
+</body>
+</html>

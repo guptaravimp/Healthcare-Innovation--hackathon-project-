@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <script type='text/javascript'>
+        function loadMapScenario() {
+            var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+                /* No need to set credentials if already passed in URL */
+                center: new Microsoft.Maps.Location(26.2700, 80.1955),
+                zoom: 12
+            });
+            
+
+            Microsoft.Maps.loadModule('Microsoft.Maps.Directions', function () {
+                var directionsManager = new Microsoft.Maps.Directions.DirectionsManager(map);
+                
+                // Set Route Mode to driving
+                directionsManager.setRequestOptions({ routeMode: Microsoft.Maps.Directions.RouteMode.driving });
+                
+                // Get current location 
+                var waypoint0 = new Microsoft.Maps.Directions.Waypoint({ address: 'You', location: new Microsoft.Maps.Location(26.2700, 81.1955) });
+                
+                // Get location for Ambulance
+                var waypoint2 = new Microsoft.Maps.Directions.Waypoint({ address: 'Ambulance', location: new Microsoft.Maps.Location(28.6139, 77.2090) });
+                
+                directionsManager.addWaypoint(waypoint0);
+                var customPin = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(28.6139, 77.2090), {
+                //icon: '/assets/ambulance.png', // URL to your custom pin icon
+                anchor: new Microsoft.Maps.Point(0,0),
+                width : 1.2,
+                height : 2.4
+            });
+                map.entities.push(customPin);
+              
+                directionsManager.addWaypoint(waypoint2);
+                
+                // Set the element in which the itinerary will be rendered
+                directionsManager.calculateDirections();
+            });
+        }
+    </script>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AnOeSZ6a7LgcnBLVjmZ4xfQWIWZjzKv7bDwgyRk-W4NlkGnZGQdk5atUjsunU5yH&callback=loadMapScenario' async defer></script>
+    <title>Healthify</title>
+    <link rel="stylesheet" href="stylecritical.css" />
+    <link rel="stylesheet" href="ambulance.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.webp">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+  <div class="portfolio">
+    <div class="_1">HealthCare</div>
+    <div class="_2">Innovation</div>
+  </div>
+  <div class="header">
+    <div>
+      <button id="btn"><a href="" style="text-decoration: none; color: white">Asked Question </a> </button>
+    </div>
+    <div class="navbar">
+      <div class="nav"><a href="/indexfirst.html">Home</a></div>
+      <div class="nav"><a href="/service.html">Services</a></div>
+      <div class="nav"><a href="/about.html">AboutUs</a></div>
+      <div class="nav"><a href="/Conatct.html">Contact Us</a></div>
+      <div class="nav"><a href="/Appointment.html">Appointment</a></div>
+    </div>
+    <button id="btn">
+      <a href="/registration.html" style="text-decoration: none; color: white">Register</a>
+    </button>
+  </div>
+      <nav id="hamburger-nav">
+        <div class="logo">Healthify</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="Home"></a></li>
+            <li><a href="#service" onclick="toggleMenu()">Services</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <hr style="margin:0 50px;">
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="image/profile-pic.jpg" alt="Healthify profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section_text_p1">Hello, I'm</p>
+          <h1 class="title">Healthify</h1>
+          <p class="section_text_p2"> your health friend</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/Broucher-example.pdf')"
+            >
+              Download Broucher
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          
+      </div>
+      </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id='printoutPanel'>
+      <div class="mapbox">
+            <div id='myMap' ></div>
+        </div>
+      </div>
+   
+    
+    <img id="ambulanceIcon" src="/assets/ambulance.png" style="display:none;">
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Us</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="image/email.jpg"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">support@healthify.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="image/telephone.jpg"
+              alt="telephone icon"
+              class="icon contact-icon"
+            />
+            <p><a href="">+91 54674 54674</a></p>
+          </div>
+        </div>
+      </section>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Healthify. All Rights Reserved.</p>
+      </footer>
+    
+</body>
+</html>
